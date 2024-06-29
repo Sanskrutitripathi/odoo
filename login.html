@@ -1,40 +1,48 @@
-<span style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Login Form</title>
-        <link rel="stylesheet" href="css/log_sign.css">
-    </head>
+<html lang="en">
 
-    <body>
-        <div class="container">
-            <div class="login">
-                <form>
-                    <h1>Login</h1>
-                    <hr>
-                    <p class="new">Surf the Wellness Wave to bliss</p>
-                    <label>Email</label>
-                    <input type="text" placeholder="abc@example.com">
-                    <label>Password</label>
-                    <input type="password" placeholder="Enter your password">
-                    <button><a href="index.html" style="color: black;">Submit</a></button>
-                    <p>
-                        <a href="#">Forgot Password?</a>
-                    </p>
-                    <p class="para-2">
-                        Not have an account? <a href="signup.html">Sign Up Here</a>
-                    </p>
-                </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login & Registration Form</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="css/login.css">
+</head>
 
-            </div>
-            <div class="pic">
-                <img src="images/login-1.jpg" alt="Image">
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Login</header>
+            <form action='/login' method="get">
+                <input type="text" placeholder="Enter your email">
+                <input type="password" placeholder="Enter your password">
+                <a href="#">Forgot password?</a>
+                <a href="index.html"><input type="button" class="button" value="Login"></a>
+            </form>
+            <div class="signup">
+                <span class="signup">Don't have an account?
+                    <label for="check">Signup</label>
+                </span>
             </div>
         </div>
+        <div class="registration form">
+            <header>Signup</header>
+            <form action="/signup" method="get">
+                <input type="text" placeholder="Enter your email">
+                <input type="password" placeholder="Create a password">
+                <input type="password" placeholder="Confirm your password">
+                <a href="index.html"><input type="button" class="button" value="Signup"></a>
+            </form>
+            <div class="signup">
+                <span class="signup">Already have an account?
+                    <label for="check">Login</label>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
 
-    </body>
-
-    </html>
-</span>
+</html>
